@@ -1,8 +1,11 @@
 import express from "express";
 
 const app = express();
-const PORT = 8000;
-app.get("/", (res, req) => {
+const PORT = 8000 || process.env.PORT;
+
+// Middleware to parse JSON requests
+app.use(express.json());
+app.get("/", (req, res) => {
   res.send("Hi from Olagunju Alameen");
 });
 
