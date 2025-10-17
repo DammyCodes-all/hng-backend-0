@@ -2,6 +2,9 @@ import express from "express";
 
 const app = express();
 const PORT = 8000;
+app.get("/", (res, req) => {
+  res.send("Hi from Olagunju Alameen");
+});
 
 app.get("/me", async (req, res) => {
   try {
