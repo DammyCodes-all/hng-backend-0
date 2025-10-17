@@ -1,0 +1,16 @@
+{
+  "name": "hng-backend-0",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "DammyCodes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
